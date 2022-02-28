@@ -11,9 +11,9 @@ class EmailAddressParser
     end
 
     def parse
-        no_commas = @emails.tr(",", " ")
-        new_emails = no_commas.split(" ")
-        return new_emails.uniq
+        # no_commas = @emails.tr(",", " ")
+        return new_emails = @emails.tr(",", " ").split(" ").uniq
+
         
     end
 end
